@@ -1,0 +1,297 @@
+/* JGD-Fall Sunset- GTK+3.20 version */
+
+/* Checkboxes/Radios */
+checkbutton,
+radiobutton {
+	padding: 3px 6px;
+}
+
+checkbutton label,
+radiobutton label {
+	padding: 0px 6px;
+}
+
+.view check:hover,
+.view radio:hover,
+.view check:checked:selected,
+.view radio:checked:selected {
+	background-color: transparent;
+}
+
+menu check,
+menu radio,
+popover check,
+popover radio {
+	min-height: 12px;
+	min-width: 12px;
+	margin: 3px;
+}
+
+row checkbutton:focus {
+	outline: none;
+}
+
+checkbutton check,
+menu menuitem check,
+popover check,
+.view check {
+	-gtk-icon-source: -gtk-scaled(url("assets/check-unselected.svg"));
+}
+
+checkbutton check:checked,
+menu menuitem check:checked,
+popover check:checked,
+.view check:checked {
+	-gtk-icon-source: -gtk-scaled(url("assets/check-selected.svg"));
+}
+
+checkbutton check:hover,
+menu menuitem check:hover,
+popover check:hover,
+.view check:hover {
+	-gtk-icon-source: -gtk-scaled(url("assets/check-unselected-hover.svg"));
+}
+
+checkbutton check:checked:hover,
+menu menuitem check:checked:hover,
+popover check:checked:hover,
+.view check:checked:hover {
+	-gtk-icon-source: -gtk-scaled(url("assets/check-selected-hover.svg"));
+}
+
+checkbutton check:focus,
+menu menuitem check:focus,
+popover check:focus,
+.view check:focus {
+	-gtk-icon-source: -gtk-scaled(url("assets/check-unselected-focus.svg"));
+}
+
+checkbutton check:focus:checked,
+menu menuitem check:focus:checked,
+popover check:focus:checked,
+.view check:focus:checked {
+	-gtk-icon-source: -gtk-scaled(url("assets/check-selected-focus.svg"));
+}
+
+checkbutton check:disabled,
+menu menuitem check:disabled,
+popover check:disabled,
+.view check:disabled {
+	-gtk-icon-source: -gtk-scaled(url("assets/check-unselected-disabled.svg"));
+}
+
+checkbutton check:disabled:checked,
+menu menuitem check:disabled:checked,
+popover check:disabled:checked,
+.view check:disabled:checked {
+	-gtk-icon-source: -gtk-scaled(url("assets/check-selected-disabled.svg"));
+}
+
+checkbutton check:indeterminate:checked,
+menu menuitem check:indeterminate:checked,
+popover check:indeterminate:checked,
+.view check:indeterminate:checked {
+	-gtk-icon-source: -gtk-scaled(url("assets/check-mixed.svg"));
+}
+
+checkbutton check:hover:indeterminate:checked,
+menu menuitem check:hover:indeterminate:checked,
+popover check:hover:indeterminate:checked,
+.view check:hover:indeterminate:checked {
+	-gtk-icon-source: -gtk-scaled(url("assets/check-mixed-hover.svg"));
+}
+
+checkbutton check:indeterminate:focus:checked,
+menu menuitem check:indeterminate:focus:checked,
+popover check:indeterminate:focus:checked,
+.view check:indeterminate:focus:checked {
+	-gtk-icon-source: -gtk-scaled(url("assets/check-mixed-focus.svg"));
+}
+
+checkbutton check:disabled:indeterminate,
+menu menuitem check:disabled:indeterminate,
+popover check:disabled:indeterminate,
+.view check:disabled:indeterminate {
+	-gtk-icon-source: -gtk-scaled(url("assets/check-mixed-disabled.svg"));
+}
+
+radiobutton radio,
+menu menuitem radio,
+popover radio,
+.view radio {
+	-gtk-icon-source: -gtk-scaled(url("assets/radio-unselected.svg"));
+}
+
+radiobutton radio:checked,
+menu menuitem radio:checked,
+popover radio:checked,
+.view radio:checked {
+	-gtk-icon-source: -gtk-scaled(url("assets/radio-selected.svg"));
+}
+
+radiobutton radio:hover,
+menu menuitem radio:hover,
+popover radio:hover,
+.view radio:hover {
+	-gtk-icon-source: -gtk-scaled(url("assets/radio-unselected-hover.svg"));
+}
+
+radiobutton radio:checked:hover,
+menu menuitem radio:checked:hover,
+popover radio:checked:hover,
+.view radio:checked:hover {
+	-gtk-icon-source: -gtk-scaled(url("assets/radio-selected-hover.svg"));
+}
+
+radiobutton radio:focus,
+menu menuitem radio:focus,
+popover radio:focus,
+.view radio:focus {
+	-gtk-icon-source: -gtk-scaled(url("assets/radio-unselected-focus.svg"));
+}
+
+radiobutton radio:focus:checked,
+menu menuitem radio:focus:checked,
+popover radio:focus:checked,
+.view radio:focus:checked {
+	-gtk-icon-source: -gtk-scaled(url("assets/radio-selected-focus.svg"));
+}
+
+radiobutton radio:disabled,
+menu menuitem radio:disabled,
+popover radio:disabled,
+.view radio:disabled {
+	-gtk-icon-source: -gtk-scaled(url("assets/radio-unselected-disabled.svg"));
+}
+
+radiobutton radio:checked:disabled,
+menu menuitem radio:checked:disabled,
+popover radio:checked:disabled,
+.view radio:checked:disabled {
+	-gtk-icon-source: -gtk-scaled(url("assets/radio-selected-disabled.svg"));
+}
+
+radiobutton radio:indeterminate:checked,
+menu menuitem radio:indeterminate:checked,
+popover radio:indeterminate:checked,
+.view radio:indeterminate:checked {
+	-gtk-icon-source: -gtk-scaled(url("assets/radio-mixed.svg"));
+}
+
+radiobutton radio:hover:indeterminate:checked,
+menu menuitem radio:hover:indeterminate:checked,
+popover radio:hover:indeterminate:checked,
+.view radio:hover:indeterminate:checked {
+	-gtk-icon-source: -gtk-scaled(url("assets/radio-mixed-hover.svg"));
+}
+
+radiobutton radio:indeterminate:focus:checked,
+menu menuitem radio:indeterminate:focus:checked,
+popover radio:indeterminate:focus:checked,
+.view radio:indeterminate:focus:checked {
+	-gtk-icon-source: -gtk-scaled(url("assets/radio-mixed-focus.svg"));
+}
+
+radiobutton radio:disabled:indeterminate,
+menu menuitem radio:disabled:indeterminate,
+popover radio:disabled:indeterminate,
+.view radio:disabled:indeterminate {
+	-gtk-icon-source: -gtk-scaled(url("assets/radio-mixed-disabled.svg"));
+}
+
+.view check:hover,
+.view check:selected,
+iconview check:hover,
+treeview check:hover,
+row check:hover {
+	background-color: transparent;
+}
+
+/* Client Side Decorations */
+headerbar button.titlebutton {
+	background-image: none;
+	border-style: none;
+	background-color: transparent;
+	background-position: center center;
+	background-repeat: no-repeat;
+	color: transparent;
+	border-width: 0;
+	min-width: 20px;
+	min-height: 20px;
+}
+
+headerbar button.titlebutton.close,
+.titlebar button.titlebutton.close {
+	background-image: -gtk-scaled(url("assets/close-button.svg"));
+}
+
+headerbar button.titlebutton.close image {
+	-gtk-icon-style: requested; /* Important! Gets rid of built in close icon, so you can use your own */
+}
+
+headerbar button.titlebutton.close:hover,
+.titlebar button.titlebutton.close:hover,
+headerbar button.titlebutton.close:hover:backdrop,
+.titlebar button.titlebutton.close:hover:backdrop {
+	background-image: -gtk-scaled(url("assets/close-button-hover.svg"));
+}
+
+headerbar button.titlebutton.close:active,
+.titlebar button.titlebutton.close:active {
+	background-image: -gtk-scaled(url("assets/close-button-active.svg"));
+}
+
+headerbar button.titlebutton.maximize,
+.titlebar button.titlebutton.maximize {
+	background-image: -gtk-scaled(url("assets/maximize-button.svg"));
+}
+
+headerbar button.titlebutton.maximize:hover,
+.titlebar button.titlebutton.maximize:hover,
+headerbar button.titlebutton.maximize:hover:backdrop,
+.titlebar button.titlebutton.maximize:hover:backdrop {
+	background-image: -gtk-scaled(url("assets/maximize-button-hover.svg"));
+}
+
+headerbar button.titlebutton.maximize:active,
+.titlebar button.titlebutton.maximize:active {
+	background-image: -gtk-scaled(url("assets/maximize-button-active.svg"));
+}
+
+.maximized headerbar button.titlebutton.maximize,
+.maximized .titlebar button.titlebutton.maximize {
+	background-image: -gtk-scaled(url("assets/maximized-button.svg"));
+}
+
+.maximized headerbar button.titlebutton.maximize:hover,
+.maximized .titlebar button.titlebutton.maximize:hover,
+.maximized headerbar button.titlebutton.maximize:hover:backdrop,
+.maximized .titlebar button.titlebutton.maximize:hover:backdrop {
+	background-image: -gtk-scaled(url("assets/maximized-button-hover.svg"));
+}
+
+.maximized headerbar button.titlebutton.maximize:active,
+.maximized .titlebar button.titlebutton.maximize:active,
+.maximized headerbar button.titlebutton.maximize:active:backdrop,
+.maximized .titlebar button.titlebutton.maximize:active:backdrop {
+	background-image: -gtk-scaled(url("assets/maximized-button-active.svg"));
+}
+
+headerbar button.titlebutton.minimize,
+.titlebar button.titlebutton.minimize {
+	background-image: -gtk-scaled(url("assets/minimize-button.svg"));
+}
+
+headerbar button.titlebutton.minimize:hover,
+.titlebar button.titlebutton.minimize:hover,
+headerbar button.titlebutton.minimize:hover:backdrop,
+.titlebar button.titlebutton.minimize:hover:backdrop {
+	background-image: -gtk-scaled(url("assets/minimize-button-hover.svg"));
+}
+
+headerbar button.titlebutton.minimize:active,
+.titlebar button.titlebutton.minimize:active,
+headerbar button.titlebutton.minimize:active:backdrop,
+.titlebar button.titlebutton.minimize:active:backdrop {
+	background-image: -gtk-scaled(url("assets/minimize-button-active.svg"));
+}
