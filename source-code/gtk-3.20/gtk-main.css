@@ -1,0 +1,46 @@
+/* JGD-Fall Sunset- GTK+3.20 version */
+/* GTK Main file */
+@define-color theme_bg_color #1b1e1f;
+@define-color theme_fg_color rgba(255, 255, 255, 0.75);
+@define-color theme_base_color #3d4345;
+@define-color theme_text_color rgba(255, 255, 255, 0.75);
+@define-color theme_selected_bg_color #2a5972;
+@define-color theme_selected_fg_color rgba(255, 255, 255, 0.87);
+@define-color tooltip_bg_color #3d4345;
+@define-color tooltip_fg_color rgba(255, 255, 255, 0.87);
+
+@define-color border_color #596266;
+@define-color border_color_faded rgba(89, 98, 102, 0.75);
+@define-color border_color_light rgba(89, 98, 102, 0.25);
+@define-color border_color_dark #0e1215;
+@define-color border_disabled_color shade (@button_disabled_color, 1.33);
+@define-color window_border_backdrop_color #052b3f;
+@define-color button_bg_color mix (@theme_base_color, #b3573c, 0.75);
+@define-color button_fg_color #000000;
+@define-color button_light_color alpha (#b3573c, 0.5);
+@define-color button_disabled_color mix (@theme_base_color, #b3573c, 0.25);
+@define-color button_disabled_fg_color shade (@pure_black, 0.25);
+@define-color button_disabled_fg_color_alt shade (@pure_white, 0.50);
+@define-color button_border_color #db846b;
+@define-color headerbar_button_color #2a5972;
+@define-color headerbar_button_highlight_color #4a758d;
+@define-color headerbar_button_border_color #15435b;
+@define-color entry-progress-color #7195a8;
+
+@define-color primary_color #b3573c;
+@define-color primary_color_faded alpha (@primary_color, 0.75);
+@define-color secondary_color #052b3f;
+@define-color secondary_color_faded alpha (@secondary_color, 0.75);
+@define-color link_color #6ea236;
+@define-color focus_color alpha (#b3573c, 0.66);
+@define-color focus_color_dark @theme_fg_color;
+@define-color brown #641802;
+@define-color dark_brown #312c2a;
+@define-color light_gray #757c7e;
+@define-color pure_black #000000;
+@define-color pure_black_25pcnt rgba(0, 0, 0, 0.25);
+@define-color pure_black_50pcnt rgba(0, 0, 0, 0.50);
+@define-color pure_white #ffffff;
+@define-color pure_white_50pcnt rgba(255, 255, 255, 0.50);
+@define-color silver #c0c0c0;
+@define-color error_color #de0000;
