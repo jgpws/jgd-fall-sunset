@@ -75,6 +75,7 @@ style "alt-button" {
 	
 	bg[PRELIGHT] = @base_color
 	fg[PRELIGHT] = @selected_fg_color
+	bg[INSENSITIVE] = mix (0.25, "#b3573c", @base_color)
 	fg[NORMAL] = @selected_fg_color
 	fg[ACTIVE] = @selected_fg_color
 }
@@ -86,7 +87,7 @@ style "toolbar-button" {
 style "checkbutton-label" {
 	fg[NORMAL] = @fg_color
 	fg[ACTIVE] = @fg_color
-	fg[INSENSITIVE] = "#404040"
+	fg[INSENSITIVE] = "#999999"
 }
 
 style "combobox-button-label" {
@@ -94,7 +95,7 @@ style "combobox-button-label" {
 }
 
 style "label" {
-	fg[INSENSITIVE] = "#404040"
+	fg[INSENSITIVE] = "#999999"
 }
 
 style "entry" {
@@ -190,6 +191,7 @@ widget "gtk-tooltip*" style "tooltips"
 widget_class "*<GtkButton>*" style "button"
 widget_class "*<GtkCheckButton>*" style "alt-button"
 widget_class "*<GtkLinkButton>*" style "alt-button"
+widget_class "*<GtkNotebook>*<GtkButton>*" style "alt-button"
 widget_class "*<GtkScale>*" style "scale"
 widget_class "*<GtkLabel>*" style "label"
 widget_class "*<GtkCheckButton>*<GtkLabel>" style "checkbutton-label"
