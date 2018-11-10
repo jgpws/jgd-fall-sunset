@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=JGD-FallSunset
+Comment=A dark theme with orange, brown and blue color scheme
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=JGD-FallSunset
+MetacityTheme=JGD-FallSunset
+ApplicationFont=DejaVu Sans Condensed 14
