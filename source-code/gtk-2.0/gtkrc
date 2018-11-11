@@ -28,7 +28,7 @@ style "default" {
 	text[NORMAL] = @text_color
 	
 	bg[INSENSITIVE] = mix (0.25, "#b3573c", @base_color)
-	fg[INSENSITIVE] = shade(0.25, "#000000")
+	fg[INSENSITIVE] = shade(0.25, "#000000" )
 	base[INSENSITIVE] = mix (0.25, "#b3573c", @base_color)
 	text[INSENSITIVE] = shade(0.25, "#000000")
 	
@@ -61,7 +61,7 @@ style "button" {
 	}
 
 	bg[NORMAL] = mix(0.25, @base_color, "#b3573c")
-	fg[NORMAL] = "#000000"
+	fg[NORMAL] = @fg_color
 	bg[ACTIVE] = "#b3573c"
 	fg[ACTIVE] = "#000000"
 	
@@ -95,6 +95,9 @@ style "combobox-button-label" {
 }
 
 style "label" {
+	fg[NORMAL] = @fg_color
+	fg[ACTIVE] = @fg_color
+	fg[SELECTED] = @fg_color
 	fg[INSENSITIVE] = "#999999"
 }
 
@@ -109,7 +112,7 @@ style "notebook" {
 	bg[ACTIVE] = mix(0.25, @base_color, "#b3573c")
 }
 
-style "notebook-label" {
+style "notebook-header-label" {
 	#Font
 	font_name = "DejaVu Serif Condensed Bold"
 }
@@ -200,7 +203,8 @@ widget_class "*.<GtkComboBox>*<GtkCellView>" style "combobox-button-label"
 widget_class "*.<GtkComboboxEntry>.<GtkToggleButton>" style "combobox-button-label"
 widget_class "*<GtkEntry>*" style "entry"
 widget_class "*<GtkNotebook>*" style "notebook"
-widget_class "*<GtkNotebook>.<GtkLabel>" style "notebook-label"
+widget_class "*<GtkNotebook>*<GtkLabel>*" style "label"
+widget_class "*<GtkNotebook>.<GtkLabel>" style "notebook-header-label"
 widget_class "*<GtkMenuBar>*" style "menubar"
 widget_class "*<GtkMenu>*" style "menu"
 widget_class "*<GtkMenuItem>*" style "menuitem"
