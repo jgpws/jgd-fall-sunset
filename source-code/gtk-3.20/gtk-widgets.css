@@ -1363,7 +1363,7 @@ flowbox rubberband,
 .content-view rubberband,
 .rubberband {
 	border: 1px solid @theme_selected_bg_color;
-	background-color: rgba(34, 139, 34, 0.25);
+	background-color: rgba(5, 43, 63, 0.25);
 }
 
 /* Fixes for specific applications */
