@@ -20,7 +20,8 @@ A dark GTK theme collection with an orange, brown and blue color scheme based on
 5. `ls` to check that the theme folder is present
 
 ### To Install on Arch Linux:
-Coming soon...
+You can install JGD-FallSunset from the Arch User Repository with Yay:
+`yay -S jgd-fall-sunset`
 
 ## Theme Switching
 Once installed, you can use a theme switching application such as **LXAppearance** or **Gnome Tweaks** to change the theme to JGD-FallSunset.
