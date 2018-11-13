@@ -23,14 +23,23 @@ A dark GTK theme collection with an orange, brown and blue color scheme based on
 You can install JGD-FallSunset from the Arch User Repository with Yay:
 `yay -S jgd-fall-sunset`
 
-## Theme Switching
+## Theme Switching / Post Install
 Once installed, you can use a theme switching application such as **LXAppearance** or **Gnome Tweaks** to change the theme to JGD-FallSunset.
 
 ### Metacity ###
-You can switch the Metacity theme from the command line:
+Metacity users can switch the theme from the command line:
 `gsettings set org.gnome.desktop.wm.preferences theme JGD-FallSunset`
 
 The above setting worked in a Compiz environment in Arch. For other desktop environments, see the article [Gnome Appearance modify command in Linux / How to change theme using command line in GNOME](http://www.pc-freak.net/blog/gnome-appearance-modify-command-in-linux-how-to-change-theme-using-command-line-in-gnome/).
+
+### Openbox ###
+Openbox users can change the the theme with the **Openbox Configuration Manager** (obconf). Here are the recommended font selections that work best with this theme, found under the Appearance tab:
+* Active window title: DejaVu Serif Bold
+* Inactive window title: DejaVu Serif Bold
+* Menu header: DejaVu Serif Bold
+* Menu item: DejaVu Sans Condensed
+* Active On-screen display: DejaVu Sans Condensed
+* Inactive On-screen display: DejaVu Sans Condensed
 
 ## How to Install the Required Theme Engines ##
 JGD-FallSunset requires the Murrine theme engine.
