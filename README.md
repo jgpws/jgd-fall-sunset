@@ -1,6 +1,8 @@
 # JGD-FallSunset
 A dark GTK theme collection with an orange, brown and blue color scheme based on JGD-SpringAwakening.
 
+* [Theme Homepage](https://www.jasong-designs.com/2018/11/11/jgd-fallsunset/)
+
 ## How to Install
 1. Download the latest file from the [downloads](https://github.com/jgpws/jgd-fall-sunset/tree/master/downloads) directory
 2. Open a Terminal application
