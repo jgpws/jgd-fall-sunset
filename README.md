@@ -25,8 +25,16 @@ A dark GTK theme collection with an orange, brown and blue color scheme based on
 JGD-FallSunset is available in the Arch User Repository. It can be installed with Yay:
 `yay -S jgd-fall-sunset`
 
+## Icon Set ##
+I created an icon set in [Oomox](https://github.com/themix-project/oomox) with custom colors to match this theme. To install:
+1. Download from the [downloads](https://github.com/jgpws/jgd-fall-sunset/tree/master/downloads) directory
+2. Open a terminal application
+3. `cd Downloads`
+4. Untar: `tar -zxvf JGD-FallSunset-GnomeIcons.tar.gz`
+5. Copy to local .icons directory: `cp -R JGD-FallSunset-GnomeIcons ../.icons`
+
 ## Theme Switching / Post Install
-Once installed, you can use a theme switching application such as **LXAppearance** or **Gnome Tweaks** to change the theme to JGD-FallSunset.
+Once installed, you can use a theme switching application such as **LXAppearance** or **Gnome Tweaks** to change the theme and/or icon theme to JGD-FallSunset.
 
 ### Metacity ###
 Metacity users can switch the theme from the command line:
