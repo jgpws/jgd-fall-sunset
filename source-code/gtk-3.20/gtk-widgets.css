@@ -401,6 +401,15 @@ button.text-button {
 	margin: 3px;
 }
 
+button.suggested-action,
+button.text-button.suggested-action,
+headerbar button.suggested-action,
+headerbar button.text-button.suggested-action {
+	background-color: @light_blue;
+	border-color: @headerbar_button_border_color;
+	color: @button_fg_color;
+}
+
 button.destructive-action,
 button.destructive-action:focus { /* Record buttons/etc. */
 	background-color: @error_color;
@@ -408,7 +417,7 @@ button.destructive-action:focus { /* Record buttons/etc. */
 }
 
 button.appmenu image {
-	color: @theme_text_color;
+	color: @theme_selected_fg_color;
 }
 
 button label:disabled {
@@ -923,9 +932,13 @@ menuitem:disabled {
 	-gtk-icon-effect: dim;
 }
 
-scrolledwindow menuitem label ,
+scrolledwindow menuitem label,
 scrolledwindow menuitem:hover menuitem label {
 	color: @theme_fg_color;
+}
+
+scrolledwindow menuitem menuitem label:disabled {
+	color: @pure_white_50pcnt;
 }
 
 scrolledwindow menuitem:hover label,
@@ -1095,8 +1108,8 @@ filechooser stack.view {
 trough {
 	background-color: @theme_base_color;
 	background-image: linear-gradient(
-		@border_color_faded,
-		rgba(0, 0, 0, 0)
+		rgba(0, 0, 0, 0),
+		@border_color_faded
 	);
 	border: 1px solid @border_color_faded;
 }
@@ -1115,17 +1128,15 @@ scale trough:disabled {
 }
 
 progressbar.horizontal progress {
-	background-image: linear-gradient(to bottom,
+	background-image: linear-gradient(
+		to bottom,
 		rgba(0, 0, 0, 0) 0%,
 		rgba(0, 0, 0, 0.25) 100%),
 							repeating-linear-gradient(90deg,
-		rgba(255, 255, 255, .12) 2px,
 		transparent 2px,
 		transparent 4px,
 		rgba(255, 255, 255, .12) 4px,
-		rgba(255, 255, 255, .12) 6px,
-		transparent 6px,
-		transparent 6px
+		rgba(255, 255, 255, .12) 6px
 	);
 }
 
@@ -1135,13 +1146,10 @@ progressbar.vertical progress {
 		rgba(0, 0, 0, 0) 0%,
 		rgba(0, 0, 0, 0.25) 100%),
 							repeating-linear-gradient(180deg,
-		rgba(255, 255, 255, .12) 2px,
 		transparent 2px,
 		transparent 4px,
 		rgba(255, 255, 255, .12) 4px,
-		rgba(255, 255, 255, .12) 6px,
-		transparent 6px,
-		transparent 6px
+		rgba(255, 255, 255, .12) 6px
 	);
 }
 
@@ -1156,8 +1164,8 @@ scale.vertical trough,
 scrollbar.vertical trough {
 	background-image: linear-gradient(
 		to right,
-		@border_color_faded,
-		rgba(0, 0, 0, 0)
+		rgba(0, 0, 0, 0),
+		@border_color_faded
 	);
 }
 
