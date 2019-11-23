@@ -216,8 +216,8 @@ headerbar button.titlebutton {
 	background-repeat: no-repeat;
 	color: transparent;
 	border-width: 0;
-	min-width: 20px;
-	min-height: 20px;
+	padding-left: 1.5px;
+	padding-right: 1.5px;
 }
 
 headerbar button.titlebutton.close,
