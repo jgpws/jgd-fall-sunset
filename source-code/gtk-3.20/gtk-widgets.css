@@ -1,7 +1,6 @@
 /* Widgets */
 * {
 	background-clip: padding-box;
-	font-size: 14px;
 	-gtk-icon-style: requested;
 	-gtk-outline-radius: 6px;
 	outline-color: @primary_color;
